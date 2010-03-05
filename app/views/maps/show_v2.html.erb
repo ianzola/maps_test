@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Google Maps API Sample</title>
+	<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA1Y0EJr2-x1tX_oP26mPnMxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQqyNUIEvKzeT2vz_cs4cqubo-Rew"></script>
+	<%= javascript_include_tag 'jquery-1.4.2.min' %>
+	<script type="text/javascript">
+	var a_poly = new Array();
+	var boundaries;
+	jQuery.noConflict();
+	jQuery(function(){
+		boundaries = <%= @boundaries.to_json %>;
+	});
+	</script>
+	<script type="text/javascript">
+	var map;
+	var poly;
+	var pathcoordinates;
+	function initialize() {
+
+		a = new GLatLng(-33.89374,151.26250);
+		map = new GMap2(document.getElementById("map_canvas"));
+		map.setMapType(G_PHYSICAL_MAP);	
+		map.setCenter(a, 14);
+		jQuery.each(boundaries, function(i,item){
+			obj = eval("(" + item + ")");
+			console.log(obj);
+			jQuery.each(obj.polygons, function(j,p){
+				var b = new Array();
+				jQuery.each(p.coords, function(t,k){
+					b[t] = new GLatLng(k.lat, k.lon); 
+				});
+				polygon = new GPolygon(b,"CC3333", 3, 1, "99CCFF", 0.5);
+				map.addOverlay(polygon);
+			});
+		});
+		
+		map.setUIToDefault();
+	}
+
+	function placeMarker(event){
+		position = event.latLng;
+		mark = new google.maps.Marker({map: map, position: position});
+		mark.setMap(map);	
+
+		path = poly.getPath();
+		path.insertAt(path.length,position);
+
+		mark.setTitle("#" + position);
+	}
+
+
+	</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()"  onunload="GUnload()">
+	<div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>

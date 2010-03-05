@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Google Maps API Sample</title>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<%= javascript_include_tag 'jquery-1.4.2.min' %>
+	<script type="text/javascript">
+	var a_poly = new google.maps.MVCArray();
+	jQuery.noConflict();
+	jQuery(function(){
+		var boundaries = <%= @boundaries.to_json %>;
+		jQuery.each(boundaries, function(i,item){
+			obj = eval("(" + item + ")");
+			jQuery.each(obj.polygons, function(j,p){
+				var b = new google.maps.MVCArray();
+				jQuery.each(p.coords, function(t,k){
+					b.insertAt(t,new google.maps.LatLng(k.lat, k.lon)); 
+				});
+				a_poly.insertAt(j,b);
+			});
+			console.log(a_poly);
+		});
+	});
+	</script>
+	<script type="text/javascript">
+	var map;
+	var poly;
+	var pathcoordinates;
+	function initialize() {
+
+		a = new google.maps.LatLng(-33.89374,151.26250);
+		options = {center: a,
+			zoom: 14,
+			mapTypeId: google.maps.MapTypeId.TERRAIN};
+			map = new google.maps.Map(document.getElementById("map_canvas"),options);
+
+			polygon_options = {paths: a_poly,
+				strokeColor:"CC3333",
+				fillColor: "99CCFF"}
+				polygon = new google.maps.Polygon(polygon_options);
+				polygon.setMap(map);
+			}
+
+			function placeMarker(event){
+				position = event.latLng;
+				mark = new google.maps.Marker({map: map, position: position});
+				mark.setMap(map);	
+
+				path = poly.getPath();
+				path.insertAt(path.length,position);
+
+				mark.setTitle("#" + position);
+			}
+
+
+			</script>
+		</head>
+		<body style="margin:0px; padding:0px;" onload="initialize()">
+			<div id="map_canvas" style="width:100%; height:100%"></div>
+		</body>
+		</html>

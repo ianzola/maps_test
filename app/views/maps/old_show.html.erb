@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Google Maps API Sample</title>
+	<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA1Y0EJr2-x1tX_oP26mPnMxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQqyNUIEvKzeT2vz_cs4cqubo-Rew"></script>
+
+	<script type="text/javascript">
+	var map;
+	var poly;
+	var pathcoordinates;
+	function initialize() {
+		var a = new Array();
+		if (GBrowserIsCompatible()) {
+			a[0] = new GLatLng(37.80437,-122.27080);
+			a[1] = new GLatLng(19.89868,-155.66586)
+			a[2] = new GLatLng(-18.14260,178.43100);
+			a[3] = new GLatLng(-27.46758,153.02789);
+
+				map = new GMap2(document.getElementById("map_canvas"));
+				map.setMapType(G_NORMAL_MAP);			
+				
+				//line = new google.maps.Polyline({path: a, strokeColor: "FF3300"});
+				//line.setMap(map);	
+
+				//pathcoordinates = new google.maps.MVCArray();
+				//poly = new google.maps.Polyline({path: pathcoordinates, strokeColor: "FF3300"});
+				//poly.setMap(map);
+				//google.maps.event.addListener(map,'click',function(event){placeMarker(event);});	
+
+				var triangle = new Array();
+				triangle[0] = new GLatLng(27.84655,-174.1228);
+				triangle[1] = new GLatLng(-21.1176,-167.2674);
+				triangle[2] = new GLatLng(7.3708,-106.0955);
+				triangle[3] = new GLatLng(27.84655,-174.1228);
+				map.setCenter(a[1], 3);
+				polygon = new GPolygon(triangle,"#3333ff", 3, 1, "#99ccff", 0.2);
+				map.addOverlay(polygon);
+				
+				map.setUIToDefault();
+				}
+			}
+
+			function placeMarker(event){
+				position = event.latLng;
+				mark = new google.maps.Marker({map: map, position: position});
+				mark.setMap(map);	
+
+				path = poly.getPath();
+				path.insertAt(path.length,position);
+
+				mark.setTitle("#" + position);
+			}
+
+
+			</script>
+		</head>
+		<body style="margin:0px; padding:0px;" onload="initialize()"  onunload="GUnload()">
+			<div id="map_canvas" style="width:100%; height:100%"></div>
+		</body>
+		</html>
