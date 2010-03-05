@@ -1660,3 +1660,719 @@ Completed in 52ms (View: 29, DB: 0) | 200 OK [http://localhost/]
 Processing MapsController#show (for 127.0.0.1 at 2010-03-05 13:43:54) [GET]
 Rendering maps/show
 Completed in 75ms (View: 73, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:34:13) [GET]
+
+Errno::ENOENT (No such file or directory - public/boundaries/0.json):
+  app/controllers/maps_controller.rb:12:in `initialize'
+  app/controllers/maps_controller.rb:12:in `open'
+  app/controllers/maps_controller.rb:12:in `show'
+  app/controllers/maps_controller.rb:10:in `each'
+  app/controllers/maps_controller.rb:10:in `each_with_index'
+  app/controllers/maps_controller.rb:10:in `show'
+
+Rendered rescues/_trace (119.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:34:55) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-03-05 14:37:01) [GET]
+
+SyntaxError (/Users/ingrid/development/maps_test/app/controllers/maps_controller.rb:12: syntax error, unexpected tASSOC, expecting '}'
+...  @boundaries.merge!{'code' => {'values' => open(url).read, ...
+                              ^):
+  
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:38:20) [GET]
+Rendering maps/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:38:36) [GET]
+Rendering maps/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:39:06) [GET]
+Rendering maps/show
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:39:48) [GET]
+Rendering maps/show
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:40:06) [GET]
+Rendering maps/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:40:39) [GET]
+Rendering maps/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:41:28) [GET]
+Rendering maps/show
+Completed in 36ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:42:26) [GET]
+Rendering maps/show
+Completed in 105ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:42:49) [GET]
+Rendering maps/show
+Completed in 41ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:43:14) [GET]
+Rendering maps/show
+Completed in 118ms (View: 107, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:43:42) [GET]
+Rendering maps/show
+Completed in 43ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:43:59) [GET]
+Rendering maps/show
+Completed in 40ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:49:09) [GET]
+Rendering maps/show
+Completed in 43ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:50:17) [GET]
+Rendering maps/show
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:50:38) [GET]
+Rendering maps/show
+Completed in 99ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:53:54) [GET]
+Rendering maps/show
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:55:17) [GET]
+Rendering maps/show
+Completed in 107ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:56:59) [GET]
+Rendering maps/show
+Completed in 42ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:57:39) [GET]
+Rendering maps/show
+Completed in 110ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 14:58:46) [GET]
+Rendering maps/show
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:00:10) [GET]
+Rendering maps/show
+Completed in 40ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:04:19) [GET]
+Rendering maps/show
+Completed in 37ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:06:05) [GET]
+Rendering maps/show
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:06:37) [GET]
+Rendering maps/show
+Completed in 100ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:07:26) [GET]
+Rendering maps/show
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:07:40) [GET]
+Rendering maps/show
+Completed in 106ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:08:47) [GET]
+Rendering maps/show
+Completed in 40ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:10:05) [GET]
+Rendering maps/show
+Completed in 105ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:10:34) [GET]
+Rendering maps/show
+Completed in 43ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:12:50) [GET]
+Rendering maps/show
+Completed in 41ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:13:01) [GET]
+Rendering maps/show
+Completed in 103ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:13:30) [GET]
+Rendering maps/show
+Completed in 41ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:14:02) [GET]
+Rendering maps/show
+Completed in 85ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:14:42) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:15:11) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:16:34) [GET]
+Rendering maps/show
+Completed in 97ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:17:43) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:18:24) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:19:29) [GET]
+Rendering maps/show
+Completed in 97ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:20:14) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:20:46) [GET]
+Rendering maps/show
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:21:40) [GET]
+Rendering maps/show
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:22:25) [GET]
+Rendering maps/show
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:23:33) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:25:30) [GET]
+Rendering maps/show
+Completed in 97ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:26:13) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:26:31) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:26:45) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:27:00) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:27:32) [GET]
+Rendering maps/show
+Completed in 100ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:28:21) [GET]
+Rendering maps/show
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:28:33) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:28:46) [GET]
+Rendering maps/show
+Completed in 97ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:29:03) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:29:23) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:29:34) [GET]
+Rendering maps/show
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:30:09) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:30:24) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:32:01) [GET]
+Rendering maps/show
+Completed in 99ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:32:39) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:33:03) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:33:18) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:33:55) [GET]
+Rendering maps/show
+
+ActionView::TemplateError (undefined local variable or method `item' for #<ActionView::Base:0x1035f0448>) on line #17 of app/views/maps/show.html.erb:
+14: 		var boundaries = <%= @boundaries.to_json %>;
+15: 		//console.log(boundaries);
+16: 		jQuery.each(boundaries, function(i,item){
+17: 			s = <%= item.json %>;
+18: 			console.log(s);
+19: 			obj = eval("(" + item.values + ")");
+20: 			precinct.stroke = item.stroke;
+
+    app/views/maps/show.html.erb:17
+
+Rendered rescues/_trace (49.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:35:17) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:35:38) [GET]
+Rendering maps/show
+Completed in 106ms (View: 104, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:36:16) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:36:52) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:39:13) [GET]
+Rendering maps/show
+Completed in 96ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:39:44) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:40:53) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:41:05) [GET]
+Rendering maps/show
+Completed in 100ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:41:59) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:42:14) [GET]
+Rendering maps/show
+Completed in 30ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:42:45) [GET]
+Rendering maps/show
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:44:10) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:45:20) [GET]
+Rendering maps/show
+Completed in 145ms (View: 122, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:45:52) [GET]
+Rendering maps/show
+Completed in 71ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:46:54) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:48:34) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:49:14) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:51:33) [GET]
+Rendering maps/show
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:52:25) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:52:48) [GET]
+Rendering maps/show
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:54:22) [GET]
+Rendering maps/show
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:54:54) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:55:47) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:56:44) [GET]
+Rendering maps/show
+Completed in 97ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:57:38) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:59:09) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 15:59:21) [GET]
+Rendering maps/show
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:00:40) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:01:12) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:05:50) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:06:08) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:06:29) [GET]
+Rendering maps/show
+Completed in 101ms (View: 98, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:06:52) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:11:43) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:18:16) [GET]
+Rendering maps/show
+Completed in 101ms (View: 99, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:18:50) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:19:10) [GET]
+Rendering maps/show
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:19:29) [GET]
+Rendering maps/show
+Completed in 97ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:19:59) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:20:10) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:21:10) [GET]
+Rendering maps/show
+Completed in 97ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:21:20) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:21:28) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:21:46) [GET]
+Rendering maps/show
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:21:56) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:22:31) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:22:47) [GET]
+Rendering maps/show
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:27:45) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:28:06) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:30:42) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:33:50) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:37:08) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:37:28) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:37:42) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:39:20) [GET]
+Rendering maps/show
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:40:16) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:40:31) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:41:18) [GET]
+Rendering maps/show
+Completed in 96ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:41:42) [GET]
+Rendering maps/show
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:42:40) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:43:45) [GET]
+Rendering maps/show
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:44:30) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:44:53) [GET]
+Rendering maps/show
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:45:06) [GET]
+Rendering maps/show
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:45:16) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:45:27) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:46:17) [GET]
+Rendering maps/show
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:46:58) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:47:30) [GET]
+Rendering maps/show
+Completed in 31ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:48:03) [GET]
+Rendering maps/show
+Completed in 27ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-05 16:49:00) [GET]
+Rendering maps/show
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://localhost/]

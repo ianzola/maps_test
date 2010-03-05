@@ -7,19 +7,20 @@
 	<%= javascript_include_tag 'jquery-1.4.2.min' %>
 	<script type="text/javascript">
 	var a_poly = new google.maps.MVCArray();
+	var precincts = new Array();
 	jQuery.noConflict();
 	jQuery(function(){
 		var boundaries = <%= @boundaries.to_json %>;
 		jQuery.each(boundaries, function(i,item){
-			obj = eval("(" + item + ")");
+			obj = eval("(" + item.values + ")");
 			jQuery.each(obj.polygons, function(j,p){
 				var b = new google.maps.MVCArray();
 				jQuery.each(p.coords, function(t,k){
 					b.insertAt(t,new google.maps.LatLng(k.lat, k.lon)); 
 				});
 				a_poly.insertAt(j,b);
+				precincts.push({limits: b, stroke: item.stroke, fill: item.fill});
 			});
-			console.log(a_poly);
 		});
 	});
 	</script>
@@ -29,26 +30,37 @@
 	var pathcoordinates;
 	function initialize() {
 
-		a = new google.maps.LatLng(-33.89374,151.26250);
+		a = new google.maps.LatLng(-33.884536,151.278221);
 		options = {center: a,
-			zoom: 14,
+			zoom: 5,
 			mapTypeId: google.maps.MapTypeId.TERRAIN};
 			map = new google.maps.Map(document.getElementById("map_canvas"),options);
 
-			polygon_options = {paths: a_poly,
-				strokeColor:"CC3333",
-				fillColor: "99CCFF"}
-				polygon = new google.maps.Polygon(polygon_options);
-				polygon.setMap(map);
+			jQuery.each(precincts,function(index,obj){
+				//console.log(obj);
+				polygon_options = {paths: obj.limits,
+					strokeColor: obj.stroke,
+					fillColor: obj.fill}
+					polygon = new google.maps.Polygon(polygon_options);
+					polygon.setMap(map);
+				});
+
+				var southWest = new google.maps.LatLng(-33.902428,151.241208);
+				var northEast = new google.maps.LatLng(-33.864867,151.288092);
+				var bounds = new google.maps.LatLngBounds(southWest,northEast);
+			
+
+				google.maps.event.addListener(map, 'click', function(event) {
+					placeMarker(event);
+				});
+				
+					map.fitBounds(bounds);
 			}
 
 			function placeMarker(event){
 				position = event.latLng;
 				mark = new google.maps.Marker({map: map, position: position});
 				mark.setMap(map);	
-
-				path = poly.getPath();
-				path.insertAt(path.length,position);
 
 				mark.setTitle("#" + position);
 			}
@@ -57,6 +69,6 @@
 			</script>
 		</head>
 		<body style="margin:0px; padding:0px;" onload="initialize()">
-			<div id="map_canvas" style="width:100%; height:100%"></div>
+			<div id="map_canvas" style="width:55%; height:70%"></div>
 		</body>
 		</html>
