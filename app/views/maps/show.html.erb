@@ -32,7 +32,7 @@
 
 		a = new google.maps.LatLng(-33.884536,151.278221);
 		options = {center: a,
-			zoom: 5,
+			zoom: 14,
 			mapTypeId: google.maps.MapTypeId.TERRAIN};
 			map = new google.maps.Map(document.getElementById("map_canvas"),options);
 
@@ -48,27 +48,47 @@
 				var southWest = new google.maps.LatLng(-33.902428,151.241208);
 				var northEast = new google.maps.LatLng(-33.864867,151.288092);
 				var bounds = new google.maps.LatLngBounds(southWest,northEast);
-			
+
 
 				google.maps.event.addListener(map, 'click', function(event) {
 					placeMarker(event);
 				});
-				
-					map.fitBounds(bounds);
-			}
+				new_center = new google.maps.LatLng(-33.889020,151.272605);
+				new_options = {center: new_center,
+					zoom: 18,
+					mapTypeId: google.maps.MapTypeId.TERRAIN};
+					google.maps.event.addListener(polygon, 'click', function(event) {
+						map.setOptions(new_options);
+						polygon.setMap();
+					});
+					//map.fitBounds(bounds);
+					//displayDetails(polygon,event);
 
-			function placeMarker(event){
-				position = event.latLng;
-				mark = new google.maps.Marker({map: map, position: position});
-				mark.setMap(map);	
+				}
 
-				mark.setTitle("#" + position);
-			}
+				function placeMarker(event){
+					position = event.latLng;
+					mark = new google.maps.Marker({map: map, position: position});
+					mark.setMap(map);	
 
+					mark.setTitle("#" + position);
+				}
 
-			</script>
-		</head>
-		<body style="margin:0px; padding:0px;" onload="initialize()">
-			<div id="map_canvas" style="width:55%; height:70%"></div>
-		</body>
-		</html>
+				function displayDetails(event){
+
+					new_center = new google.maps.LatLng(-33.889020,151.272605);
+					options = {center: new_center,
+						zoom: 12,
+						mapTypeId: google.maps.MapTypeId.TERRAIN};
+						google.maps.event.addListener(polygon, 'click', function(event) {
+							map.setOptions(options);
+							polygon.setMap(map);
+						});
+
+					}
+					</script>
+				</head>
+				<body style="margin:0px; padding:0px;" onload="initialize()">
+					<div id="map_canvas" style="width:55%; height:70%"></div>
+				</body>
+				</html>
