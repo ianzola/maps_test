@@ -37,12 +37,11 @@
 			map = new google.maps.Map(document.getElementById("map_canvas"),options);
 
 			jQuery.each(precincts,function(index,obj){
-				//console.log(obj);
 				polygon_options = {paths: obj.limits,
 					strokeColor: obj.stroke,
 					fillColor: obj.fill}
-					polygon = new google.maps.Polygon(polygon_options);
-					polygon.setMap(map);
+					var polygon = new google.maps.Polygon(polygon_options);
+				  polygon.setMap(map);
 				});
 
 				var southWest = new google.maps.LatLng(-33.902428,151.241208);
