@@ -2521,3 +2521,1020 @@ Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/]
 Processing MapsController#show (for 127.0.0.1 at 2010-03-17 09:44:55) [GET]
 Rendering maps/show
 Completed in 103ms (View: 100, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:19:42) [GET]
+Rendering maps/show
+Completed in 275ms (View: 209, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:20:37) [GET]
+Rendering maps/show
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:21:28) [GET]
+Rendering maps/show
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:28:30) [GET]
+Rendering maps/show
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:28:43) [GET]
+Rendering maps/show
+Completed in 119ms (View: 117, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:29:01) [GET]
+Rendering maps/show
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:29:51) [GET]
+Rendering maps/show
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-18 11:30:03) [GET]
+Rendering maps/show
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 10:54:17) [GET]
+
+ActionController::RoutingError (No route matches "/estimations" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 10:54:19) [GET]
+Rendering maps/show
+Completed in 198ms (View: 137, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 10:54:28) [GET]
+
+ActionController::RoutingError (No route matches "/precincts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrecinctController#index (for 127.0.0.1 at 2010-03-23 10:54:33) [GET]
+Rendering precinct/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/precinct]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 10:55:21) [GET]
+
+ActionController::RoutingError (No route matches "/precincts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 10:58:00) [GET]
+
+ActionController::RoutingError (No route matches "/precincts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 10:58:52) [GET]
+Rendering maps/show
+Completed in 50ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 10:58:57) [GET]
+Rendering precincts/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/precincts]
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:11:36) [GET]
+Rendering precincts/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/precincts]
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:11:53) [GET]
+Rendering precincts/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/precincts]
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:13:52) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `find_first' for Precinct(Table doesn't exist):Class):
+  app/controllers/precincts_controller.rb:3:in `index'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:14:51) [GET]
+  [4;35;1mPrecinct Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: precincts: SELECT * FROM "precincts" LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: precincts: SELECT * FROM "precincts"  LIMIT 1):
+  app/controllers/precincts_controller.rb:3:in `index'
+
+Rendered rescues/_trace (58.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:15:55) [GET]
+  [4;36;1mPrecinct Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: precincts: SELECT * FROM "precincts" LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: precincts: SELECT * FROM "precincts"  LIMIT 1):
+  app/controllers/precincts_controller.rb:3:in `index'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:16:13) [GET]
+  [4;35;1mPrecinct Load (0.7ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 158559ms (View: 22, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:25:58) [GET]
+  [4;36;1mPrecinct Load (0.6ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 454986ms (View: 2, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:39:16) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 172567ms (View: 23, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 11:48:07) [GET]
+Rendering maps/show
+Completed in 50ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:48:11) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 11:52:09) [GET]
+Rendering maps/show
+Completed in 52ms (View: 49, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:52:12) [GET]
+
+SyntaxError (/Users/ingrid/development/maps_test/app/controllers/precincts_controller.rb:3: syntax error, unexpected ')', expecting kEND):
+  
+
+Rendered rescues/_trace (114.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:52:23) [GET]
+
+NameError (uninitialized constant PrecinctsController::Point):
+  app/controllers/precincts_controller.rb:3:in `index'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:52:58) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 36663ms (View: 11, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 11:54:23) [GET]
+
+TypeError (wrong argument type String (expected Module)):
+  app/controllers/precincts_controller.rb:1:in `include'
+  app/controllers/precincts_controller.rb:1
+
+Rendered rescues/_trace (135.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:54:35) [GET]
+
+NameError (uninitialized constant PrecinctsController::Point):
+  app/controllers/precincts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 11:59:16) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 39286ms (View: 25, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 12:06:22) [GET]
+Rendering maps/show
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 12:06:26) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+Rendering precincts/index
+Completed in 33394ms (View: 12, DB: 1) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 12:07:52) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 196251ms (View: 2, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (293.1ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (293.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTablePoints (20100323011245)
+  [4;36;1mSQL (197.7ms)[0m   [0;1mCREATE TABLE `table_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `data` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Key column 'geom' doesn't exist in table: CREATE INDEX `index_table_points_on_geom` ON `table_points` (`geom`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 12:16:26) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 4664061ms (View: 25, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTablePoints (20100323011245)
+  [4;35;1mSQL (489.4ms)[0m   [0mCREATE TABLE `table_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `data` varchar(255), `geom` POINT NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_table_points_on_geom ON table_points (geom)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 13:35:36) [GET]
+Rendering maps/show
+Completed in 138ms (View: 135, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTablePoints (20100323011245)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'table_points' already exists: CREATE TABLE `table_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `data` varchar(255), `geom` POINT NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTablePoints (20100323011245)
+  [4;35;1mSQL (192.1ms)[0m   [0mCREATE TABLE `table_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `data` varchar(255), `geom` POINT NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_table_points_on_geom ON table_points (geom)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTablePoints (20100323011245)
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mCREATE TABLE `table_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `data` varchar(255), `geom` POINT NOT NULL) ENGINE=MyISAM[0m
+  [4;35;1mSQL (189.2ms)[0m   [0mCREATE SPATIAL INDEX index_table_points_on_geom ON table_points (geom)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100323011245')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `lga_region`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `lga_region`[0m
+  [4;36;1mSQL (18.1ms)[0m   [0;1mshow table status like 'lga_region'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM lga_region[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `precincts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mshow table status like 'precincts'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM precincts[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `table_points`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `table_points`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mshow table status like 'table_points'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM table_points[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:46:29) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (43.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 82621ms (View: 346, DB: 44) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:53:19) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 32ms (View: 7, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:53:41) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 85ms (View: 58, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 13:55:37) [GET]
+Rendering maps/show
+Completed in 114ms (View: 112, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:56:51) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+
+NameError (undefined local variable or method `coords' for #<PrecinctsController:0x1035cb1c0>):
+  app/controllers/precincts_controller.rb:8:in `index'
+  app/controllers/precincts_controller.rb:7:in `each'
+  app/controllers/precincts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:57:04) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.<<):
+  app/controllers/precincts_controller.rb:8:in `index'
+  app/controllers/precincts_controller.rb:7:in `each'
+  app/controllers/precincts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 13:57:38) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 88ms (View: 61, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 14:17:44) [GET]
+Rendering maps/show
+Completed in 107ms (View: 104, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:19:35) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 86ms (View: 61, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:20:16) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 92ms (View: 65, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:20:56) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 159ms (View: 133, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:21:27) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 90ms (View: 64, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:21:53) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 94ms (View: 65, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:22:12) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 160ms (View: 58, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:22:37) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:23:14) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:26:51) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:27:44) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:28:52) [GET]
+  [4;35;1mPrecinct Load (0.3ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 166ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:31:51) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:32:18) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 165ms (View: 139, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:32:59) [GET]
+  [4;36;1mPrecinct Load (0.6ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 90ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:33:41) [GET]
+  [4;35;1mPrecinct Load (0.6ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:36:11) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 165ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:37:07) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:37:54) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 164ms (View: 138, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:38:44) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 90ms (View: 64, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:39:13) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 88ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:40:04) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 89ms (View: 63, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:41:10) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:44:08) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:45:20) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 654ms (View: 626, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:47:36) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 91ms (View: 65, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:48:02) [GET]
+  [4;35;1mPrecinct Load (0.3ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 91ms (View: 64, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 14:51:13) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 678027ms (View: 59, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 15:15:46) [GET]
+Rendering maps/show
+Completed in 40ms (View: 37, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:15:50) [GET]
+  [4;36;1mPrecinct Load (0.7ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 34407ms (View: 137, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:27:10) [GET]
+  [4;35;1mPrecinct Load (0.6ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 18213ms (View: 58, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:34:26) [GET]
+  [4;36;1mPrecinct Load (0.6ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 54366ms (View: 136, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:36:11) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mTablePoint Load (0.4ms)[0m   [0;1mSELECT * FROM `table_points` LIMIT 1[0m
+  [4;35;1mTablePoint Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `table_points`[0m
+  [4;36;1mSQL (31.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `table_points` [0m
+  [4;35;1mPrecinct Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 113781ms (View: 58, DB: 37) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:41:35) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 7850ms (View: 59, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:44:23) [GET]
+  [4;36;1mPrecinct Load (0.7ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 18895ms (View: 58, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:45:53) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 15118ms (View: 59, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:46:28) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 168ms (View: 140, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:56:05) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+
+NoMethodError (undefined method `frm_x_y' for GeoRuby::SimpleFeatures::Point:Class):
+  app/controllers/precincts_controller.rb:8:in `index'
+  app/controllers/precincts_controller.rb:7:in `each'
+  app/controllers/precincts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.4ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:56:14) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:57:46) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:58:32) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 6146ms (View: 143, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 15:59:11) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 8447ms (View: 65, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 16:00:08) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 5804ms (View: 141, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 16:01:09) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 3925ms (View: 59, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 16:02:34) [GET]
+  [4;35;1mPrecinct Load (0.4ms)[0m   [0mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;36;1mPrecinct Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 5338ms (View: 58, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-23 16:03:10) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 2987ms (View: 59, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-23 16:53:34) [GET]
+Rendering maps/show
+Completed in 70ms (View: 67, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 09:47:42) [GET]
+Rendering maps/show
+Completed in 257ms (View: 194, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:47:49) [GET]
+  [4;36;1mPrecinct Load (0.4ms)[0m   [0;1mSELECT * FROM `precincts` LIMIT 1[0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 21347ms (View: 84, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:53:46) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+
+NameError (undefined local variable or method `precincst' for #<PrecinctsController:0x1032a4c08>):
+  app/controllers/precincts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (121.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:54:08) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+
+NameError (undefined local variable or method `point' for #<PrecinctsController:0x10353f530>):
+  app/controllers/precincts_controller.rb:8:in `index'
+  app/controllers/precincts_controller.rb:7:in `each'
+  app/controllers/precincts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:54:18) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 626ms (View: 402, DB: 3) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:57:33) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 542ms (View: 321, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 09:58:50) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 598ms (View: 403, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:01:58) [GET]
+  [4;36;1mPrecinct Load (0.6ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 514ms (View: 400, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:03:32) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 597ms (View: 404, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:11:05) [GET]
+  [4;36;1mPrecinct Load (0.6ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 512ms (View: 399, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:11:55) [GET]
+  [4;35;1mPrecinct Load (0.6ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 511ms (View: 320, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:12:48) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 515ms (View: 402, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:14:23) [GET]
+  [4;35;1mPrecinct Load (0.6ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 510ms (View: 320, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:14:59) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 592ms (View: 398, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:15:50) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 510ms (View: 397, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 10:16:53) [GET]
+Rendering maps/show
+Completed in 111ms (View: 108, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:16:57) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 512ms (View: 400, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:17:38) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 506ms (View: 320, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:24:13) [GET]
+  [4;35;1mPrecinct Load (0.5ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 512ms (View: 399, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:26:49) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 1333ms (View: 1225, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 10:27:46) [GET]
+Rendering maps/show
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:27:50) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 510ms (View: 315, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 10:39:27) [GET]
+Rendering maps/show
+Completed in 184ms (View: 108, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:39:39) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 579ms (View: 408, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:39:44) [GET]
+  [4;35;1mPrecinct Load (0.7ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 506ms (View: 316, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 10:40:01) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 622ms (View: 422, DB: 2) | 200 OK [http://localhost/precincts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 15:48:26) [GET]
+Rendering maps/show
+Completed in 503ms (View: 445, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 15:55:03) [GET]
+Rendering maps/show
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 15:55:14) [GET]
+Rendering maps/show
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MapsController#show (for 127.0.0.1 at 2010-03-24 15:55:30) [GET]
+Rendering maps/show
+Completed in 100ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 16:05:52) [GET]
+  [4;35;1mPrecinct Load (7.2ms)[0m   [0mSELECT * FROM `precincts` [0m
+  [4;36;1mPrecinct Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 573ms (View: 433, DB: 9) | 200 OK [http://localhost/precincts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrecinctsController#index (for 127.0.0.1 at 2010-03-24 16:06:14) [GET]
+  [4;36;1mPrecinct Load (0.5ms)[0m   [0;1mSELECT * FROM `precincts` [0m
+  [4;35;1mPrecinct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `precincts`[0m
+Rendering precincts/index
+Completed in 507ms (View: 317, DB: 2) | 200 OK [http://localhost/precincts]

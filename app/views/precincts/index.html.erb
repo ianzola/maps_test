@@ -12,9 +12,7 @@
 	jQuery(function(){
 		var boundaries = <%= @boundaries.to_json %>;
 		var b = new google.maps.MVCArray();
-		//console.log(boundaries);
 		jQuery.each(boundaries,function(i,item){
-			console.log("i: " + i);
 			var region = new Array();
 			jQuery.each(item,function(j,p){
 				region.push(new google.maps.LatLng(p.lat, p.lon)); 
@@ -42,7 +40,7 @@
 					fillColor: 'CC3333'}
 					polygon = new google.maps.Polygon(polygon_options);
 					polygon.setMap(map);
-
+					
 				}
 			}
 		
