@@ -27,22 +27,34 @@
 	var pathcoordinates;
 	function initialize() {
 
-		a = new google.maps.LatLng(-33.884536,151.278221);
-		options = {center: a,
+		var a = new google.maps.LatLng(-33.884536,151.278221);
+		var options = {center: a,
 			zoom: 14,
 			mapTypeId: google.maps.MapTypeId.TERRAIN};
 			map = new google.maps.Map(document.getElementById("map_canvas"),options);
-			var i = 0;
+			var ii = 1;
+			var polygons = new Array();
 
-			for(i in precincts){
-				polygon_options = {paths: precincts[i],
+			for(ii in precincts){
+				var polygon_options = {map: map, paths: precincts[ii],
 					strokeColor: 'CC3333',
 					fillColor: 'CC3333'}
-					polygon = new google.maps.Polygon(polygon_options);
-					polygon.setMap(map);
-					
+					polygons.push(new google.maps.Polygon(polygon_options));
+					//polygons[ii].setMap(map);
+					//polygons.push(polygon);
+
 				}
-			}
+
+				jQuery.each(polygons,function(jj,p){
+					console.log(jj);
+					google.maps.event.addListener(p, 'click', function(event) {
+						
+						p.setOptions({fillColor: '00CC33'});
+						
+							//new google.maps.Polygon(new_options);
+						});
+					});
+				}
 		
 			
 			function placeMarker(event){
