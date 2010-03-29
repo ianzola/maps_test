@@ -46,15 +46,15 @@
 				}
 
 				jQuery.each(polygons,function(jj,p){
-					console.log(jj);
-					google.maps.event.addListener(p, 'click', function(event) {
-						
-						p.setOptions({fillColor: '00CC33'});
-						
-							//new google.maps.Polygon(new_options);
+					google.maps.event.addListener(p, 'mousemove', function(event) {
+
+						jQuery.each(polygons,function(k,p2){
+							p2.setOptions({fillColor: 'CC3333'});
 						});
+						p.setOptions({fillColor: '00CC33'});
 					});
-				}
+				});
+			}
 		
 			
 			function placeMarker(event){
